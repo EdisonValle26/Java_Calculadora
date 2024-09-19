@@ -7,6 +7,21 @@ public class calculadora {
         return num1 + num2;
     }
 
+    // Método para restar
+    public static double restar(double num1, double num2) {
+        return num1 - num2;
+    }
+
+    // Método para multiplicar
+    public static double multiplicar(double num1, double num2) {
+        return num1 * num2;
+    }
+
+    // Método para dividir
+    public static double dividir(double num1, double num2) {
+        return num1 / num2;
+    }
+
     // Método principal
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -33,7 +48,20 @@ public class calculadora {
         if (opcion == 1) {
             resultado = sumar(num1, num2);
             System.out.println("El resultado es: " + resultado);
-        } else {
+        }
+        if (opcion == 2) {
+            resultado = restar(num1, num2);
+            System.out.println("El resultado es: " + resultado);
+        }
+        if (opcion == 3) {
+            resultado = multiplicar(num1, num2);
+            System.out.println("El resultado es: " + resultado);
+        }
+        if (opcion == 4) {
+            resultado = dividir(num1, num2);
+            System.out.println("El resultado es: " + resultado);
+        }
+        else {
             System.out.println("Operación no válida o no implementada aún.");
         }
 
